@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ماشین حساب</title>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="calculator">
+        <div class="input" id="numberbox"></div>
+        <div class="buttons">
+          <div class="operators">
+            <div onclick="addOperator('+')">+</div>
+            <div onclick="addOperator('-')">-</div>
+            <div onclick="addOperator('*')">&times;</div>
+            <div onclick="addOperator('÷')">&divide;</div>
+          </div>
+          <div class="numberButtons">
+            <div class="numbers">
+              <div onclick="addNumber(7)">۷</div>
+              <div onclick="addNumber(8)">۸</div>
+              <div onclick="addNumber(9)">۹</div>
+            </div>
+            <div class="numbers">
+              <div onclick="addNumber(4)">۴</div>
+              <div onclick="addNumber(5)">۵</div>
+              <div onclick="addNumber(6)">۶</div>
+            </div>
+            <div class="numbers">
+              <div onclick="addNumber(1)">۱</div>
+              <div onclick="addNumber(2)">۲</div>
+              <div onclick="addNumber(3)">۳</div>
+            </div>
+            <div class="numbers">
+              <div onclick="addNumber(0)">۰</div>
+              <div onclick="addNumber('.')">.</div>
+              <div id="clear" onclick="clearNumber()">C</div>
+            </div>
+          </div>
+          <div class="equal" id="result" onclick="showResult()">=</div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="creator">
+          <h4 id="name" onclick="window.location='https://foadrashidi.ir'">محمدفواد رشیدی</h4>
+          <h4 style="font-weight: 100;margin-left: 5px;">ساخته شده توسط</h4>
+        </div>
+        <h4>پروژه نهایی کلاس مهارت های کاربردی کامپیوتر - زمستان ۱۴۰۰</h4>
+      </div>
+      <div class="logo">
+        <img src="img/sbu.png" width="75px"/>
+      </div>
+      <script src="js/calculator.js"></script>
+</body>
+</html>
